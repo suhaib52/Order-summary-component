@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+.card {
+    min-width: 450px;
+    width: 30%;
+    margin: 0 auto;
+    background-color: var(--veryPaleBlue);
+    border-radius: 8px;
+}
+
+.hero {
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.summary {
+    margin: 10px;
+    text-align: center;
+}
+
+h1, p, footer {
+    padding: 10px 0;
+}
+
+.text {
+    color: var(--desaturatedBlue);
+    font-size: 16px;
+}
+
+.price_plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--paleBlue);
+    border-radius: 6px;
+    padding: 10px 0;
+    margin: 20px;
+}
+
+.plan {
+    display: flex;
+}
+
+.plan_info {
+    padding-left: 16px;
+    text-align: left;
+}
+
+button {
+    width: 80%;
+    padding: 20px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 8px;
+    background-color: var(--brightBlue);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--desaturatedBlue);
+}
+
+.change-btn {
+    font-weight: 700;
+    padding-right: 24px;
+}
+
+.change-btn:hover {
+    color: var(--darkBlue);
+}
+
+.cancel-btn {
+    width: 25%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    color: var(--desaturatedBlue);
+    font-weight: 900;
+    padding: 20px 0;
+    transition: color .3s ease;
+}
+
+.cancel-btn:hover {
+    color: var(--darkBlue);
+}
+
+a:link {
+    text-decoration: none;
+}
